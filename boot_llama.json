@@ -1,0 +1,127 @@
+{
+  "news_classifier": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "sentence": "$HSC Receives 7-Year, $50M Contract at New Saudi Arabian Steel Mill",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "The company 's previous estimate was for a lower revenue than the year-ago EUR 93.9 million .",
+        "sentiment": "negative"
+      },
+      {
+        "sentence": "ADP News - Nov 13 , 2008 - Finnish printed circuit board PCB maker Aspocomp Group Oyj OMX : ACG1V said today that its net loss narrowed to EUR 2 million USD 2.5 m in the first nine months of 2008 from EUR 57",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "The company expects net sales to significantly increase from 2009 .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "LONDON AFX - Shares in Rautaruukki Corp have been upgraded to ` hold ' from ` sell ' by ABN Amro , with the price target raised to 25.75 eur from 14.5 , said dealers .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "After the renovation the biggest moulding line in the Orhangazi foundry is the most modern line in Europe .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "Oil Dips as China Concern On Impeachment Adds Another Twist To Trade Deal",
+        "sentiment": "negative"
+      },
+      {
+        "sentence": "Why I'd Buy ARM Holdings plc And BHP Billiton plc Today",
+        "sentiment": "positive"
+      }
+    ],
+    "signature": {
+      "instructions": "Classify the financial news headlines in the given categories.\n\nThe categories are given as:\n\n'positive': A headline that suggest good news or positive developments.\n'negative': A headline that suggest downturns, losses, challenges or negative developments.",
+      "fields": [
+        {
+          "prefix": "News:",
+          "description": "Financial news headlines."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${produce the classification}. We ..."
+        },
+        {
+          "prefix": "Classification:",
+          "description": "ONLY write the word 'positive' or 'negative', nothing else!"
+        }
+      ]
+    },
+    "extended_signature": {
+      "instructions": "Classify the financial news headlines in the given categories.\n\nThe categories are given as:\n\n'positive': A headline that suggest good news or positive developments.\n'negative': A headline that suggest downturns, losses, challenges or negative developments.",
+      "fields": [
+        {
+          "prefix": "News:",
+          "description": "Financial news headlines."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${produce the classification}. We ..."
+        },
+        {
+          "prefix": "Classification:",
+          "description": "ONLY write the word 'positive' or 'negative', nothing else!"
+        }
+      ]
+    }
+  },
+  "parser": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "sentence": "Why I'd Buy ARM Holdings plc And BHP Billiton plc Today",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "ADP News - Nov 13 , 2008 - Finnish printed circuit board PCB maker Aspocomp Group Oyj OMX : ACG1V said today that its net loss narrowed to EUR 2 million USD 2.5 m in the first nine months of 2008 from EUR 57",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "LONDON AFX - Shares in Rautaruukki Corp have been upgraded to ` hold ' from ` sell ' by ABN Amro , with the price target raised to 25.75 eur from 14.5 , said dealers .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "The company 's previous estimate was for a lower revenue than the year-ago EUR 93.9 million .",
+        "sentiment": "negative"
+      },
+      {
+        "sentence": "After the renovation the biggest moulding line in the Orhangazi foundry is the most modern line in Europe .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "The company expects net sales to significantly increase from 2009 .",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "$HSC Receives 7-Year, $50M Contract at New Saudi Arabian Steel Mill",
+        "sentiment": "positive"
+      },
+      {
+        "sentence": "Oil Dips as China Concern On Impeachment Adds Another Twist To Trade Deal",
+        "sentiment": "negative"
+      }
+    ],
+    "signature": {
+      "instructions": "Parse a raw response from a system into one of the desired outputs.\n\nThe desired outputs are:\n\n- positive\n- negative",
+      "fields": [
+        {
+          "prefix": "Raw Response:",
+          "description": "A raw response from a system that needs to be parsed."
+        },
+        {
+          "prefix": "Outputs:",
+          "description": "Only write the desired output in just one word"
+        }
+      ]
+    }
+  }
+}
